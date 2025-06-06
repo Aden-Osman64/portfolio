@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>EmailJS Test</title>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script>
+      (function(){
+        emailjs.init("UNOlhfwx158k0-z9V");
+      })();
+      function sendEmail(e) {
+        e.preventDefault();
+        emailjs.sendForm('service_l6sg2lf', 'template_1mvml4j', e.target)
+          .then(() => alert('Success!'), err => alert('Error: ' + JSON.stringify(err)));
+      }
+    </script>
+  </head>
+  <body>
+    <h2>EmailJS Minimal Test</h2>
+    <form onsubmit="sendEmail(event)">
+      <input type="text" name="name" placeholder="Name" required><br>
+      <input type="email" name="email" placeholder="Email" required><br>
+      <textarea name="message" placeholder="Message" required></textarea><br>
+      <input type="hidden" name="title" value="Test Submission">
+      <input type="hidden" name="time" value="12:00">
+      <button type="submit">Send Message</button>
+    </form>
+  </body>
+</html> 
