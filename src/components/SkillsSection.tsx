@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
-import emailjs from 'emailjs-com'
+import emailjs from '@emailjs/browser'
 
 const skills = [
   { name: 'JavaScript', level: 90 },
