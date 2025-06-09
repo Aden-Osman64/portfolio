@@ -1,7 +1,7 @@
 'use client'
 
 import { motion, useAnimation } from 'framer-motion'
-import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
+import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { useSpring, animated } from '@react-spring/web'
 import { useInView } from 'react-intersection-observer'
 import ParticleBackground from './ParticleBackground'
@@ -124,9 +124,8 @@ export default function HeroSection() {
             className="flex justify-center gap-6 mt-8"
           >
             {[
-              { icon: FaGithub, href: 'https://github.com' },
-              { icon: FaLinkedin, href: 'https://linkedin.com' },
-              { icon: FaTwitter, href: 'https://twitter.com' },
+              { icon: FaGithub, href: 'https://github.com/Aden-Osman64' },
+              { icon: FaLinkedin, href: 'https://uk.linkedin.com/in/aden-osman-984115280' },
             ].map((social, index) => (
               <motion.a
                 key={index}

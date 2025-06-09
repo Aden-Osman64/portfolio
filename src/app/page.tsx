@@ -63,7 +63,7 @@ export default function Home() {
                     <span>Live Demo</span>
                   </a>
                   <a
-                    href="https://github.com/yourusername/clearfund"
+                    href="https://github.com/Aden-Osman64/digitalsystemsproject"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors"
